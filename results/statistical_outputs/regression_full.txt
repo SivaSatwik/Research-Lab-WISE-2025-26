@@ -11,7 +11,7 @@ Dep. Variable:                    Q15   R-squared:                       0.001
 Model:                            OLS   Adj. R-squared:                  0.001
 Method:                 Least Squares   F-statistic:                     22.13
 Date:                Mon, 19 Jan 2026   Prob (F-statistic):           2.58e-06
-Time:                        14:56:01   Log-Likelihood:                -24862.
+Time:                        15:17:33   Log-Likelihood:                -24862.
 No. Observations:               16095   AIC:                         4.973e+04
 Df Residuals:                   16093   BIC:                         4.974e+04
 Df Model:                           1                                         
@@ -39,7 +39,7 @@ Dep. Variable:                    Q15   R-squared:                       0.096
 Model:                            OLS   Adj. R-squared:                  0.096
 Method:                 Least Squares   F-statistic:                     567.9
 Date:                Mon, 19 Jan 2026   Prob (F-statistic):               0.00
-Time:                        14:56:01   Log-Likelihood:                -24063.
+Time:                        15:17:33   Log-Likelihood:                -24063.
 No. Observations:               16095   AIC:                         4.813e+04
 Df Residuals:                   16091   BIC:                         4.817e+04
 Df Model:                           3                                         
@@ -69,7 +69,7 @@ Dep. Variable:                    Q15   R-squared:                       0.098
 Model:                            OLS   Adj. R-squared:                  0.098
 Method:                 Least Squares   F-statistic:                     436.2
 Date:                Mon, 19 Jan 2026   Prob (F-statistic):               0.00
-Time:                        14:56:01   Log-Likelihood:                -24045.
+Time:                        15:17:33   Log-Likelihood:                -24045.
 No. Observations:               16095   AIC:                         4.810e+04
 Df Residuals:                   16090   BIC:                         4.814e+04
 Df Model:                           4                                         
