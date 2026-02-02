@@ -1,0 +1,93 @@
+================================================================================
+HIERARCHICAL REGRESSION ANALYSIS
+Predicting Trust (Q15)
+================================================================================
+
+MODEL 1: Usage
+--------------------------------------------------------------------------------
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                    Q15   R-squared:                       0.001
+Model:                            OLS   Adj. R-squared:                  0.001
+Method:                 Least Squares   F-statistic:                     22.13
+Date:                Mon, 19 Jan 2026   Prob (F-statistic):           2.58e-06
+Time:                        15:17:33   Log-Likelihood:                -24862.
+No. Observations:               16095   AIC:                         4.973e+04
+Df Residuals:                   16093   BIC:                         4.974e+04
+Df Model:                           1                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+const          2.6775      0.024    111.556      0.000       2.630       2.725
+Q8             0.0835      0.018      4.704      0.000       0.049       0.118
+==============================================================================
+Omnibus:                     1151.232   Durbin-Watson:                   1.749
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):              426.696
+Skew:                           0.127   Prob(JB):                     2.21e-93
+Kurtosis:                       2.244   Cond. No.                         5.43
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+
+MODEL 2: Usage + Capabilities + Ethics
+--------------------------------------------------------------------------------
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                    Q15   R-squared:                       0.096
+Model:                            OLS   Adj. R-squared:                  0.096
+Method:                 Least Squares   F-statistic:                     567.9
+Date:                Mon, 19 Jan 2026   Prob (F-statistic):               0.00
+Time:                        15:17:33   Log-Likelihood:                -24063.
+No. Observations:               16095   AIC:                         4.813e+04
+Df Residuals:                   16091   BIC:                         4.817e+04
+Df Model:                           3                                         
+Covariance Type:            nonrobust                                         
+=========================================================================================
+                            coef    std err          t      P>|t|      [0.025      0.975]
+-----------------------------------------------------------------------------------------
+const                     1.5039      0.056     26.998      0.000       1.395       1.613
+Q8                        0.1047      0.017      6.175      0.000       0.071       0.138
+capabilities_score       -0.1060      0.010    -10.574      0.000      -0.126      -0.086
+ethics_concerns_score     0.4384      0.012     37.919      0.000       0.416       0.461
+==============================================================================
+Omnibus:                      604.833   Durbin-Watson:                   1.740
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):              296.242
+Skew:                           0.125   Prob(JB):                     4.70e-65
+Kurtosis:                       2.384   Cond. No.                         32.3
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+
+MODEL 3: Full Model
+--------------------------------------------------------------------------------
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                    Q15   R-squared:                       0.098
+Model:                            OLS   Adj. R-squared:                  0.098
+Method:                 Least Squares   F-statistic:                     436.2
+Date:                Mon, 19 Jan 2026   Prob (F-statistic):               0.00
+Time:                        15:17:33   Log-Likelihood:                -24045.
+No. Observations:               16095   AIC:                         4.810e+04
+Df Residuals:                   16090   BIC:                         4.814e+04
+Df Model:                           4                                         
+Covariance Type:            nonrobust                                         
+=========================================================================================
+                            coef    std err          t      P>|t|      [0.025      0.975]
+-----------------------------------------------------------------------------------------
+const                     1.6442      0.060     27.317      0.000       1.526       1.762
+Q8                        0.1094      0.017      6.452      0.000       0.076       0.143
+capabilities_score       -0.0862      0.011     -8.184      0.000      -0.107      -0.066
+ethics_concerns_score     0.4423      0.012     38.239      0.000       0.420       0.465
+attitudes_score          -0.0650      0.011     -6.112      0.000      -0.086      -0.044
+==============================================================================
+Omnibus:                      614.200   Durbin-Watson:                   1.738
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):              295.970
+Skew:                           0.119   Prob(JB):                     5.38e-65
+Kurtosis:                       2.379   Cond. No.                         42.4
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
