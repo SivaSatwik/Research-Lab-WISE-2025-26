@@ -1,0 +1,7 @@
+Variable,N,F,p,η²,Effect,Sig
+Usage Group (Q18),16297,1349.14,<.001,0.1421,Large,Yes
+Discipline (Q10),16126,5.83,<.001,0.0011,Negligible,Yes
+Gender (Q2),16261,18.63,<.001,0.0034,Negligible,Yes
+Age Group,16256,2.4,0.065,0.0004,Negligible,No
+Study Level (Q8),16168,1.12,0.325,0.0001,Negligible,No
+Region/Language,16313,46.5,<.001,0.0168,Small,Yes
