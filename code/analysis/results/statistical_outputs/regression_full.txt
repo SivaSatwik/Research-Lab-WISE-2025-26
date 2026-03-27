@@ -1,91 +1,310 @@
-HIERARCHICAL REGRESSION — PREDICTING TRUST (Q15)
+4-BLOCK HIERARCHICAL REGRESSION -- TRUST (Q15)
 ======================================================================
 
-MODEL 1: Usage Intensity
+Block 1
 ----------------------------------------------------------------------
                             OLS Regression Results                            
 ==============================================================================
-Dep. Variable:                    Q15   R-squared:                       0.351
-Model:                            OLS   Adj. R-squared:                  0.351
-Method:                 Least Squares   F-statistic:                     8776.
-Date:                Mon, 09 Mar 2026   Prob (F-statistic):               0.00
-Time:                        00:08:31   Log-Likelihood:                -21573.
-No. Observations:               16237   AIC:                         4.315e+04
-Df Residuals:                   16235   BIC:                         4.317e+04
-Df Model:                           1                                         
+Dep. Variable:                    Q15   R-squared:                       0.018
+Model:                            OLS   Adj. R-squared:                  0.018
+Method:                 Least Squares   F-statistic:                     33.24
+Date:                Fri, 27 Mar 2026   Prob (F-statistic):           1.43e-58
+Time:                        20:24:23   Log-Likelihood:                -24843.
+No. Observations:               16180   AIC:                         4.971e+04
+Df Residuals:                   16170   BIC:                         4.978e+04
+Df Model:                           9                                         
 Covariance Type:            nonrobust                                         
-===================================================================================
-                      coef    std err          t      P>|t|      [0.025      0.975]
------------------------------------------------------------------------------------
-const               0.5915      0.024     24.189      0.000       0.544       0.639
-usage_intensity     0.8449      0.009     93.679      0.000       0.827       0.863
+================================================================================================
+                                   coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------------------------
+const                            2.9517      0.041     71.566      0.000       2.871       3.033
+age_numeric                     -0.0067      0.002     -4.007      0.000      -0.010      -0.003
+gender_Female                   -0.1516      0.019     -8.196      0.000      -0.188      -0.115
+gender_Other                    -0.4521      0.144     -3.150      0.002      -0.733      -0.171
+gender_Prefer not to say        -0.3174      0.113     -2.800      0.005      -0.540      -0.095
+slevel_Doctoral                  0.1376      0.054      2.525      0.012       0.031       0.244
+slevel_Postgraduate/Masters      0.1509      0.025      6.126      0.000       0.103       0.199
+disc_Applied Sciences            0.1700      0.020      8.433      0.000       0.130       0.209
+disc_Arts & Humanities          -0.1846      0.033     -5.647      0.000      -0.249      -0.121
+disc_Natural & Life Sciences     0.0250      0.030      0.826      0.409      -0.034       0.084
 ==============================================================================
-Omnibus:                       18.251   Durbin-Watson:                   1.779
-Prob(Omnibus):                  0.000   Jarque-Bera (JB):               21.028
-Skew:                           0.018   Prob(JB):                     2.72e-05
-Kurtosis:                       3.173   Cond. No.                         10.4
+Omnibus:                      932.833   Durbin-Watson:                   1.771
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):              385.385
+Skew:                           0.133   Prob(JB):                     2.06e-84
+Kurtosis:                       2.292   Cond. No.                         387.
 ==============================================================================
 
 Notes:
 [1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
 
-MODEL 2: + Capabilities + Ethics
+Block 2
 ----------------------------------------------------------------------
                             OLS Regression Results                            
 ==============================================================================
-Dep. Variable:                    Q15   R-squared:                       0.355
-Model:                            OLS   Adj. R-squared:                  0.354
-Method:                 Least Squares   F-statistic:                     2972.
-Date:                Mon, 09 Mar 2026   Prob (F-statistic):               0.00
-Time:                        00:08:31   Log-Likelihood:                -21527.
-No. Observations:               16237   AIC:                         4.306e+04
-Df Residuals:                   16233   BIC:                         4.309e+04
-Df Model:                           3                                         
+Dep. Variable:                    Q15   R-squared:                       0.358
+Model:                            OLS   Adj. R-squared:                  0.358
+Method:                 Least Squares   F-statistic:                     903.2
+Date:                Fri, 27 Mar 2026   Prob (F-statistic):               0.00
+Time:                        20:24:23   Log-Likelihood:                -21401.
+No. Observations:               16180   AIC:                         4.282e+04
+Df Residuals:                   16169   BIC:                         4.291e+04
+Df Model:                          10                                         
 Covariance Type:            nonrobust                                         
-======================================================================================
-                         coef    std err          t      P>|t|      [0.025      0.975]
---------------------------------------------------------------------------------------
-const                  0.6772      0.046     14.864      0.000       0.588       0.766
-usage_intensity        0.8150      0.010     81.062      0.000       0.795       0.835
-capabilities_score    -0.0642      0.008     -7.639      0.000      -0.081      -0.048
-ethics_score           0.0550      0.011      5.083      0.000       0.034       0.076
+================================================================================================
+                                   coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------------------------
+const                            0.6290      0.042     15.074      0.000       0.547       0.711
+age_numeric                     -0.0034      0.001     -2.502      0.012      -0.006      -0.001
+gender_Female                   -0.0127      0.015     -0.843      0.399      -0.042       0.017
+gender_Other                    -0.1453      0.116     -1.252      0.211      -0.373       0.082
+gender_Prefer not to say        -0.0423      0.092     -0.462      0.644      -0.222       0.137
+slevel_Doctoral                  0.1844      0.044      4.186      0.000       0.098       0.271
+slevel_Postgraduate/Masters      0.1667      0.020      8.375      0.000       0.128       0.206
+disc_Applied Sciences            0.0868      0.016      5.317      0.000       0.055       0.119
+disc_Arts & Humanities          -0.1205      0.026     -4.558      0.000      -0.172      -0.069
+disc_Natural & Life Sciences     0.0387      0.024      1.582      0.114      -0.009       0.087
+usage_intensity                  0.8407      0.009     92.599      0.000       0.823       0.858
 ==============================================================================
-Omnibus:                       15.102   Durbin-Watson:                   1.770
-Prob(Omnibus):                  0.001   Jarque-Bera (JB):               17.108
-Skew:                           0.017   Prob(JB):                     0.000193
-Kurtosis:                       3.155   Cond. No.                         34.6
+Omnibus:                       20.130   Durbin-Watson:                   1.798
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):               23.348
+Skew:                           0.021   Prob(JB):                     8.51e-06
+Kurtosis:                       3.182   Cond. No.                         389.
 ==============================================================================
 
 Notes:
 [1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
 
-MODEL 3: Full Model
+Block 3
 ----------------------------------------------------------------------
                             OLS Regression Results                            
 ==============================================================================
-Dep. Variable:                    Q15   R-squared:                       0.356
-Model:                            OLS   Adj. R-squared:                  0.356
-Method:                 Least Squares   F-statistic:                     2245.
-Date:                Mon, 09 Mar 2026   Prob (F-statistic):               0.00
-Time:                        00:08:31   Log-Likelihood:                -21507.
-No. Observations:               16237   AIC:                         4.302e+04
-Df Residuals:                   16232   BIC:                         4.306e+04
-Df Model:                           4                                         
+Dep. Variable:                    Q15   R-squared:                       0.362
+Model:                            OLS   Adj. R-squared:                  0.362
+Method:                 Least Squares   F-statistic:                     765.2
+Date:                Fri, 27 Mar 2026   Prob (F-statistic):               0.00
+Time:                        20:24:23   Log-Likelihood:                -21353.
+No. Observations:               16180   AIC:                         4.273e+04
+Df Residuals:                   16167   BIC:                         4.283e+04
+Df Model:                          12                                         
 Covariance Type:            nonrobust                                         
-======================================================================================
-                         coef    std err          t      P>|t|      [0.025      0.975]
---------------------------------------------------------------------------------------
-const                  0.8054      0.050     16.193      0.000       0.708       0.903
-usage_intensity        0.8146      0.010     81.111      0.000       0.795       0.834
-capabilities_score    -0.0467      0.009     -5.285      0.000      -0.064      -0.029
-ethics_score           0.0586      0.011      5.422      0.000       0.037       0.080
-attitudes_score       -0.0570      0.009     -6.383      0.000      -0.075      -0.040
+================================================================================================
+                                   coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------------------------
+const                            0.7066      0.055     12.792      0.000       0.598       0.815
+age_numeric                     -0.0031      0.001     -2.295      0.022      -0.006      -0.000
+gender_Female                   -0.0126      0.015     -0.837      0.403      -0.042       0.017
+gender_Other                    -0.0971      0.116     -0.838      0.402      -0.324       0.130
+gender_Prefer not to say        -0.0235      0.091     -0.257      0.797      -0.203       0.156
+slevel_Doctoral                  0.1970      0.044      4.482      0.000       0.111       0.283
+slevel_Postgraduate/Masters      0.1752      0.020      8.816      0.000       0.136       0.214
+disc_Applied Sciences            0.0822      0.016      5.043      0.000       0.050       0.114
+disc_Arts & Humanities          -0.1222      0.026     -4.636      0.000      -0.174      -0.071
+disc_Natural & Life Sciences     0.0347      0.024      1.423      0.155      -0.013       0.083
+usage_intensity                  0.8101      0.010     80.067      0.000       0.790       0.830
+capabilities_score              -0.0655      0.008     -7.760      0.000      -0.082      -0.049
+ethics_score                     0.0571      0.011      5.281      0.000       0.036       0.078
 ==============================================================================
-Omnibus:                       13.009   Durbin-Watson:                   1.770
-Prob(Omnibus):                  0.001   Jarque-Bera (JB):               14.667
-Skew:                           0.009   Prob(JB):                     0.000653
-Kurtosis:                       3.146   Cond. No.                         44.6
+Omnibus:                       17.233   Durbin-Watson:                   1.789
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):               19.682
+Skew:                           0.020   Prob(JB):                     5.32e-05
+Kurtosis:                       3.166   Cond. No.                         396.
 ==============================================================================
 
 Notes:
 [1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+
+Block 4 (Full)
+----------------------------------------------------------------------
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                    Q15   R-squared:                       0.364
+Model:                            OLS   Adj. R-squared:                  0.363
+Method:                 Least Squares   F-statistic:                     711.4
+Date:                Fri, 27 Mar 2026   Prob (F-statistic):               0.00
+Time:                        20:24:23   Log-Likelihood:                -21332.
+No. Observations:               16180   AIC:                         4.269e+04
+Df Residuals:                   16166   BIC:                         4.280e+04
+Df Model:                          13                                         
+Covariance Type:            nonrobust                                         
+================================================================================================
+                                   coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------------------------
+const                            0.8247      0.058     14.199      0.000       0.711       0.939
+age_numeric                     -0.0027      0.001     -2.007      0.045      -0.005   -6.37e-05
+gender_Female                   -0.0067      0.015     -0.444      0.657      -0.036       0.023
+gender_Other                    -0.0894      0.116     -0.772      0.440      -0.316       0.137
+gender_Prefer not to say        -0.0287      0.091     -0.314      0.754      -0.208       0.150
+slevel_Doctoral                  0.2071      0.044      4.715      0.000       0.121       0.293
+slevel_Postgraduate/Masters      0.1748      0.020      8.809      0.000       0.136       0.214
+disc_Applied Sciences            0.0833      0.016      5.119      0.000       0.051       0.115
+disc_Arts & Humanities          -0.1184      0.026     -4.494      0.000      -0.170      -0.067
+disc_Natural & Life Sciences     0.0348      0.024      1.428      0.153      -0.013       0.083
+usage_intensity                  0.8102      0.010     80.180      0.000       0.790       0.830
+capabilities_score              -0.0481      0.009     -5.437      0.000      -0.065      -0.031
+ethics_score                     0.0605      0.011      5.595      0.000       0.039       0.082
+attitudes_score                 -0.0581      0.009     -6.499      0.000      -0.076      -0.041
+==============================================================================
+Omnibus:                       14.947   Durbin-Watson:                   1.789
+Prob(Omnibus):                  0.001   Jarque-Bera (JB):               17.010
+Skew:                           0.012   Prob(JB):                     0.000202
+Kurtosis:                       3.157   Cond. No.                         400.
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+
+4-BLOCK HIERARCHICAL REGRESSION -- SATISFACTION (Q16)
+======================================================================
+
+Block 1
+----------------------------------------------------------------------
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                    Q16   R-squared:                       0.006
+Model:                            OLS   Adj. R-squared:                  0.005
+Method:                 Least Squares   F-statistic:                     10.80
+Date:                Fri, 27 Mar 2026   Prob (F-statistic):           6.62e-17
+Time:                        20:24:23   Log-Likelihood:                -17907.
+No. Observations:               16187   AIC:                         3.583e+04
+Df Residuals:                   16177   BIC:                         3.591e+04
+Df Model:                           9                                         
+Covariance Type:            nonrobust                                         
+================================================================================================
+                                   coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------------------------
+const                            3.9340      0.027    146.559      0.000       3.881       3.987
+age_numeric                     -0.0001      0.001     -0.112      0.911      -0.002       0.002
+gender_Female                   -0.0246      0.012     -2.040      0.041      -0.048      -0.001
+gender_Other                    -0.3051      0.093     -3.265      0.001      -0.488      -0.122
+gender_Prefer not to say        -0.3977      0.074     -5.389      0.000      -0.542      -0.253
+slevel_Doctoral                  0.0147      0.035      0.415      0.678      -0.055       0.084
+slevel_Postgraduate/Masters     -0.0030      0.016     -0.186      0.852      -0.034       0.028
+disc_Applied Sciences           -0.0079      0.013     -0.603      0.547      -0.034       0.018
+disc_Arts & Humanities          -0.1498      0.021     -7.044      0.000      -0.191      -0.108
+disc_Natural & Life Sciences    -0.0328      0.020     -1.667      0.096      -0.071       0.006
+==============================================================================
+Omnibus:                      539.238   Durbin-Watson:                   1.881
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):              656.270
+Skew:                          -0.399   Prob(JB):                    3.11e-143
+Kurtosis:                       3.580   Cond. No.                         387.
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+
+Block 2
+----------------------------------------------------------------------
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                    Q16   R-squared:                       0.142
+Model:                            OLS   Adj. R-squared:                  0.141
+Method:                 Least Squares   F-statistic:                     267.2
+Date:                Fri, 27 Mar 2026   Prob (F-statistic):               0.00
+Time:                        20:24:23   Log-Likelihood:                -16718.
+No. Observations:               16187   AIC:                         3.346e+04
+Df Residuals:                   16176   BIC:                         3.354e+04
+Df Model:                          10                                         
+Covariance Type:            nonrobust                                         
+================================================================================================
+                                   coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------------------------
+const                            2.9843      0.031     95.599      0.000       2.923       3.045
+age_numeric                      0.0012      0.001      1.228      0.219      -0.001       0.003
+gender_Female                    0.0323      0.011      2.870      0.004       0.010       0.054
+gender_Other                    -0.1798      0.087     -2.070      0.038      -0.350      -0.010
+gender_Prefer not to say        -0.2853      0.069     -4.158      0.000      -0.420      -0.151
+slevel_Doctoral                  0.0335      0.033      1.015      0.310      -0.031       0.098
+slevel_Postgraduate/Masters      0.0037      0.015      0.246      0.805      -0.026       0.033
+disc_Applied Sciences           -0.0420      0.012     -3.439      0.001      -0.066      -0.018
+disc_Arts & Humanities          -0.1238      0.020     -6.264      0.000      -0.163      -0.085
+disc_Natural & Life Sciences    -0.0269      0.018     -1.472      0.141      -0.063       0.009
+usage_intensity                  0.3437      0.007     50.594      0.000       0.330       0.357
+==============================================================================
+Omnibus:                      548.068   Durbin-Watson:                   1.879
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):              739.934
+Skew:                          -0.367   Prob(JB):                    2.12e-161
+Kurtosis:                       3.747   Cond. No.                         389.
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+
+Block 3
+----------------------------------------------------------------------
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                    Q16   R-squared:                       0.177
+Model:                            OLS   Adj. R-squared:                  0.177
+Method:                 Least Squares   F-statistic:                     290.8
+Date:                Fri, 27 Mar 2026   Prob (F-statistic):               0.00
+Time:                        20:24:23   Log-Likelihood:                -16374.
+No. Observations:               16187   AIC:                         3.277e+04
+Df Residuals:                   16174   BIC:                         3.287e+04
+Df Model:                          12                                         
+Covariance Type:            nonrobust                                         
+================================================================================================
+                                   coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------------------------
+const                            2.8151      0.041     69.401      0.000       2.736       2.895
+age_numeric                      0.0010      0.001      0.987      0.324      -0.001       0.003
+gender_Female                    0.0286      0.011      2.593      0.010       0.007       0.050
+gender_Other                    -0.0825      0.085     -0.969      0.332      -0.249       0.084
+gender_Prefer not to say        -0.2421      0.067     -3.604      0.000      -0.374      -0.110
+slevel_Doctoral                  0.0498      0.032      1.541      0.123      -0.014       0.113
+slevel_Postgraduate/Masters      0.0168      0.015      1.152      0.249      -0.012       0.045
+disc_Applied Sciences           -0.0431      0.012     -3.599      0.000      -0.067      -0.020
+disc_Arts & Humanities          -0.1215      0.019     -6.279      0.000      -0.159      -0.084
+disc_Natural & Life Sciences    -0.0289      0.018     -1.615      0.106      -0.064       0.006
+usage_intensity                  0.2611      0.007     35.127      0.000       0.247       0.276
+capabilities_score              -0.0712      0.006    -11.478      0.000      -0.083      -0.059
+ethics_score                     0.1799      0.008     22.661      0.000       0.164       0.195
+==============================================================================
+Omnibus:                      549.382   Durbin-Watson:                   1.872
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):              772.036
+Skew:                          -0.355   Prob(JB):                    2.26e-168
+Kurtosis:                       3.800   Cond. No.                         396.
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+
+Block 4 (Full)
+----------------------------------------------------------------------
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                    Q16   R-squared:                       0.178
+Model:                            OLS   Adj. R-squared:                  0.177
+Method:                 Least Squares   F-statistic:                     268.7
+Date:                Fri, 27 Mar 2026   Prob (F-statistic):               0.00
+Time:                        20:24:23   Log-Likelihood:                -16373.
+No. Observations:               16187   AIC:                         3.277e+04
+Df Residuals:                   16173   BIC:                         3.288e+04
+Df Model:                          13                                         
+Covariance Type:            nonrobust                                         
+================================================================================================
+                                   coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------------------------
+const                            2.8398      0.043     66.492      0.000       2.756       2.924
+age_numeric                      0.0011      0.001      1.067      0.286      -0.001       0.003
+gender_Female                    0.0298      0.011      2.700      0.007       0.008       0.051
+gender_Other                    -0.0809      0.085     -0.950      0.342      -0.248       0.086
+gender_Prefer not to say        -0.2432      0.067     -3.620      0.000      -0.375      -0.112
+slevel_Doctoral                  0.0519      0.032      1.605      0.109      -0.011       0.115
+slevel_Postgraduate/Masters      0.0167      0.015      1.146      0.252      -0.012       0.045
+disc_Applied Sciences           -0.0428      0.012     -3.578      0.000      -0.066      -0.019
+disc_Arts & Humanities          -0.1207      0.019     -6.235      0.000      -0.159      -0.083
+disc_Natural & Life Sciences    -0.0289      0.018     -1.614      0.106      -0.064       0.006
+usage_intensity                  0.2612      0.007     35.134      0.000       0.247       0.276
+capabilities_score              -0.0675      0.007    -10.380      0.000      -0.080      -0.055
+ethics_score                     0.1806      0.008     22.725      0.000       0.165       0.196
+attitudes_score                 -0.0122      0.007     -1.851      0.064      -0.025       0.001
+==============================================================================
+Omnibus:                      556.128   Durbin-Watson:                   1.873
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):              781.204
+Skew:                          -0.358   Prob(JB):                    2.31e-170
+Kurtosis:                       3.803   Cond. No.                         400.
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+

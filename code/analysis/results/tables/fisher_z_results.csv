@@ -1,7 +1,19 @@
-Group 1,Group 2,r1,r2,Z,p,Sig
-Arts & Humanities,Social Sciences,0.5541612096891668,0.6092600189520045,-3.144,0.0017,**
-Arts & Humanities,Applied Sciences,0.5541612096891668,0.5872295463551535,-1.819,0.0689,ns
-Arts & Humanities,Natural & Life Sciences,0.5541612096891668,0.548257745353711,0.262,0.7937,ns
-Social Sciences,Applied Sciences,0.6092600189520045,0.5872295463551535,2.124,0.0337,*
-Social Sciences,Natural & Life Sciences,0.6092600189520045,0.548257745353711,3.797,0.0001,***
-Applied Sciences,Natural & Life Sciences,0.5872295463551535,0.548257745353711,2.331,0.0197,*
+Relationship,Group1,Group2,r1,r2,n1,n2,Z,p_raw,sig_raw,p_bonferroni,sig_bonferroni
+Usage <> Trust,Arts & Humanities,Social Sciences,0.554,0.609,1713,8442,-3.144,0.0017,**,0.01,*
+Usage <> Trust,Arts & Humanities,Applied Sciences,0.554,0.587,1713,7018,-1.819,0.0689,ns,0.4134,ns
+Usage <> Trust,Arts & Humanities,Natural & Life Sciences,0.554,0.548,1713,2146,0.262,0.7937,ns,1.0,ns
+Usage <> Trust,Social Sciences,Applied Sciences,0.609,0.587,8442,7018,2.124,0.0337,*,0.202,ns
+Usage <> Trust,Social Sciences,Natural & Life Sciences,0.609,0.548,8442,2146,3.797,0.0001,***,0.0009,***
+Usage <> Trust,Applied Sciences,Natural & Life Sciences,0.587,0.548,7018,2146,2.331,0.0197,*,0.1184,ns
+Capabilities <> Trust,Arts & Humanities,Social Sciences,-0.099,-0.114,1583,7833,0.573,0.5668,ns,1.0,ns
+Capabilities <> Trust,Arts & Humanities,Applied Sciences,-0.099,-0.097,1583,6423,-0.058,0.9534,ns,1.0,ns
+Capabilities <> Trust,Arts & Humanities,Natural & Life Sciences,-0.099,-0.072,1583,1920,-0.785,0.4323,ns,1.0,ns
+Capabilities <> Trust,Social Sciences,Applied Sciences,-0.114,-0.097,7833,6423,-1.036,0.3003,ns,1.0,ns
+Capabilities <> Trust,Social Sciences,Natural & Life Sciences,-0.114,-0.072,7833,1920,-1.667,0.0955,ns,0.5732,ns
+Capabilities <> Trust,Applied Sciences,Natural & Life Sciences,-0.097,-0.072,6423,1920,-0.962,0.336,ns,1.0,ns
+Ethics <> Trust,Arts & Humanities,Social Sciences,0.317,0.296,1426,7159,0.804,0.4216,ns,1.0,ns
+Ethics <> Trust,Arts & Humanities,Applied Sciences,0.317,0.298,1426,5770,0.736,0.4618,ns,1.0,ns
+Ethics <> Trust,Arts & Humanities,Natural & Life Sciences,0.317,0.283,1426,1724,1.054,0.292,ns,1.0,ns
+Ethics <> Trust,Social Sciences,Applied Sciences,0.296,0.298,7159,5770,-0.087,0.9304,ns,1.0,ns
+Ethics <> Trust,Social Sciences,Natural & Life Sciences,0.296,0.283,7159,1724,0.537,0.591,ns,1.0,ns
+Ethics <> Trust,Applied Sciences,Natural & Life Sciences,0.298,0.283,5770,1724,0.582,0.5609,ns,1.0,ns

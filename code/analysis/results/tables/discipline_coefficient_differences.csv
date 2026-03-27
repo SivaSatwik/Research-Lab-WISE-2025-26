@@ -1,0 +1,25 @@
+Predictor,Group1,Group2,b1,b2,Z,p_raw,p_bonferroni,sig_bonferroni
+usage_intensity,Arts & Humanities,Social Sciences,0.7712,0.8363,-1.683,0.0925,0.5547,ns
+usage_intensity,Arts & Humanities,Applied Sciences,0.7712,0.8062,-0.887,0.3751,1.0,ns
+usage_intensity,Arts & Humanities,Natural & Life Sciences,0.7712,0.7521,0.396,0.6922,1.0,ns
+usage_intensity,Social Sciences,Applied Sciences,0.8363,0.8062,1.34,0.1802,1.0,ns
+usage_intensity,Social Sciences,Natural & Life Sciences,0.8363,0.7521,2.358,0.0183,0.1101,ns
+usage_intensity,Applied Sciences,Natural & Life Sciences,0.8062,0.7521,1.481,0.1387,0.8319,ns
+capabilities_score,Arts & Humanities,Social Sciences,-0.07,-0.0235,-1.438,0.1506,0.9034,ns
+capabilities_score,Arts & Humanities,Applied Sciences,-0.07,-0.0608,-0.281,0.7788,1.0,ns
+capabilities_score,Arts & Humanities,Natural & Life Sciences,-0.07,-0.0283,-1.016,0.3098,1.0,ns
+capabilities_score,Social Sciences,Applied Sciences,-0.0235,-0.0608,1.88,0.0601,0.3605,ns
+capabilities_score,Social Sciences,Natural & Life Sciences,-0.0235,-0.0283,0.152,0.8791,1.0,ns
+capabilities_score,Applied Sciences,Natural & Life Sciences,-0.0608,-0.0283,-1.011,0.3119,1.0,ns
+ethics_score,Arts & Humanities,Social Sciences,0.1106,0.0551,1.411,0.1582,0.949,ns
+ethics_score,Arts & Humanities,Applied Sciences,0.1106,0.062,1.201,0.2297,1.0,ns
+ethics_score,Arts & Humanities,Natural & Life Sciences,0.1106,0.0474,1.255,0.2093,1.0,ns
+ethics_score,Social Sciences,Applied Sciences,0.0551,0.062,-0.28,0.7796,1.0,ns
+ethics_score,Social Sciences,Natural & Life Sciences,0.0551,0.0474,0.2,0.8415,1.0,ns
+ethics_score,Applied Sciences,Natural & Life Sciences,0.062,0.0474,0.365,0.7151,1.0,ns
+attitudes_score,Arts & Humanities,Social Sciences,-0.0163,-0.0603,1.255,0.2096,1.0,ns
+attitudes_score,Arts & Humanities,Applied Sciences,-0.0163,-0.0504,0.964,0.3352,1.0,ns
+attitudes_score,Arts & Humanities,Natural & Life Sciences,-0.0163,-0.0843,1.578,0.1145,0.6872,ns
+attitudes_score,Social Sciences,Applied Sciences,-0.0603,-0.0504,-0.499,0.6177,1.0,ns
+attitudes_score,Social Sciences,Natural & Life Sciences,-0.0603,-0.0843,0.761,0.4466,1.0,ns
+attitudes_score,Applied Sciences,Natural & Life Sciences,-0.0504,-0.0843,1.062,0.2884,1.0,ns
