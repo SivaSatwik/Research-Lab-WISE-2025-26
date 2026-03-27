@@ -1,0 +1,7 @@
+Variable,N,F,p,eta2,Effect,Sig,Method
+Usage Group (Q18),16297,1266.88,<.001,0.1421,Large,Yes,Welch's ANOVA
+Discipline (Q10),16126,5.83,<.001,0.0011,Negligible,Yes,Standard ANOVA
+Gender (Q2),16261,11.99,<.001,0.0034,Negligible,Yes,Welch's ANOVA
+Age Group,16256,2.38,0.067,0.0004,Negligible,No,Welch's ANOVA
+Study Level (Q8),16168,1.12,0.325,0.0001,Negligible,No,Standard ANOVA
+Region/Language,16313,47.2,<.001,0.0168,Small,Yes,Welch's ANOVA

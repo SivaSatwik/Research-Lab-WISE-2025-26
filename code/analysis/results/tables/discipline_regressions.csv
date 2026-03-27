@@ -1,0 +1,17 @@
+Discipline,Predictor,b,SE,beta_std,p,sig,R2,N
+Arts & Humanities,usage_intensity,0.7712,0.0357,0.5268,0.0,***,0.3263,1424
+Arts & Humanities,capabilities_score,-0.07,0.0294,-0.0555,0.0173,*,0.3263,1424
+Arts & Humanities,ethics_score,0.1106,0.036,0.0754,0.0022,**,0.3263,1424
+Arts & Humanities,attitudes_score,-0.0163,0.0323,-0.0117,0.6135,ns,0.3263,1424
+Social Sciences,usage_intensity,0.8363,0.0149,0.5872,0.0,***,0.3727,7149
+Social Sciences,capabilities_score,-0.0235,0.0135,-0.0177,0.0809,ns,0.3727,7149
+Social Sciences,ethics_score,0.0551,0.0157,0.0368,0.0005,***,0.3727,7149
+Social Sciences,attitudes_score,-0.0603,0.0136,-0.0444,0.0,***,0.3727,7149
+Applied Sciences,usage_intensity,0.8062,0.0168,0.5685,0.0,***,0.3537,5759
+Applied Sciences,capabilities_score,-0.0608,0.0145,-0.0462,0.0,***,0.3537,5759
+Applied Sciences,ethics_score,0.062,0.0186,0.0397,0.0008,***,0.3537,5759
+Applied Sciences,attitudes_score,-0.0504,0.0144,-0.0384,0.0005,***,0.3537,5759
+Natural & Life Sciences,usage_intensity,0.7521,0.0324,0.5316,0.0,***,0.3037,1720
+Natural & Life Sciences,capabilities_score,-0.0283,0.0286,-0.0215,0.322,ns,0.3037,1720
+Natural & Life Sciences,ethics_score,0.0474,0.0352,0.031,0.1773,ns,0.3037,1720
+Natural & Life Sciences,attitudes_score,-0.0843,0.0285,-0.0641,0.0031,**,0.3037,1720
