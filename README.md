@@ -154,24 +154,88 @@ All scales have Cronbach's α ≥ .84, meeting the conventional reliability thre
 
 ## Setup and Reproduction
 
-**Requirements:** Python 3.10+
+### Step 0 — Check your Python version
+
+Open a terminal (Mac: **Terminal** app, Windows: **Command Prompt** or **PowerShell**) and run:
 
 ```bash
-# 1. Install dependencies
-pip install -r requirements.txt
-
-# 2. Run notebooks in order
-jupyter notebook code/analysis/01_data_cleaning.ipynb
-jupyter notebook code/analysis/02_descriptive_statistics.ipynb
-jupyter notebook code/analysis/03_correlation_analysis.ipynb
-jupyter notebook code/analysis/04_regression_analysis.ipynb
-jupyter notebook code/analysis/05_group_comparisons.ipynb
+python --version
 ```
 
-Notebooks must be run in order: `01` generates `cleaned_data.csv` which all subsequent notebooks depend on.
+You need **Python 3.10 or higher**. If you see `Python 2.x` or nothing, try:
 
-**Output files generated:**
-- `code/analysis/results/figures/` — fig1–fig9.png (all figures, dpi=150)
+```bash
+python3 --version
+```
+
+If Python is not installed, download it from [python.org](https://www.python.org/downloads/).
+
+---
+
+### Step 1 — Clone or download the repository
+
+**Option A — using Git:**
+```bash
+git clone https://github.com/VivekanandaReddy3/Research-Lab-WISE-2025-26.git
+cd Research-Lab-WISE-2025-26
+```
+
+**Option B — without Git:**
+Click **Code → Download ZIP** on the GitHub page, unzip it, and open a terminal inside the unzipped folder.
+
+---
+
+### Step 2 — Install dependencies
+
+Try this first:
+```bash
+pip install -r requirements.txt
+```
+
+If that gives an error like `pip: command not found`, try:
+```bash
+pip3 install -r requirements.txt
+```
+
+If you want to keep your system Python clean, you can use a virtual environment first (optional but recommended):
+```bash
+python3 -m venv venv          # create a virtual environment called "venv"
+source venv/bin/activate       # activate it  (Mac/Linux)
+venv\Scripts\activate          # activate it  (Windows)
+pip install -r requirements.txt
+```
+
+---
+
+### Step 3 — Launch Jupyter and run the notebooks
+
+From the **repo root folder**, run:
+
+```bash
+jupyter notebook
+```
+
+This opens a browser window. Navigate to `code/analysis/` and run the notebooks **in order**, from top to bottom:
+
+| Order | Notebook | What it does |
+|-------|----------|--------------|
+| 1st | `01_data_cleaning.ipynb` | Loads raw data, removes duplicates, creates all composite scores → saves `cleaned_data.csv` |
+| 2nd | `02_descriptive_statistics.ipynb` | Summary statistics and figures |
+| 3rd | `03_correlation_analysis.ipynb` | Pearson correlation matrix (RQ3) |
+| 4th | `04_regression_analysis.ipynb` | Hierarchical regression (RQ1) |
+| 5th | `05_group_comparisons.ipynb` | ANOVA, Fisher's Z, discipline analysis (RQ2 & RQ4) |
+
+> **Important:** You must run `01_data_cleaning.ipynb` first. All other notebooks read `cleaned_data.csv` which it generates.
+
+Inside each notebook, click **Cell → Run All** (or press `Shift+Enter` on each cell) to execute it.
+
+---
+
+### Output files generated
+
+After running all notebooks, the following are created automatically:
+
+- `code/analysis/results/figures/` — 9 figures (fig1–fig9.png, dpi=150)
 - `code/analysis/results/tables/` — 7 CSV files (correlation matrix, ANOVA summary, model comparison, Fisher's Z, discipline regressions, coefficient differences)
 
 ---
