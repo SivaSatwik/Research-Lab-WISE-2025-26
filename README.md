@@ -152,27 +152,56 @@ All scales have Cronbach's α ≥ .84, meeting the conventional reliability thre
 
 ---
 
-## Setup and Reproduction
+## How to Run
 
-**Requirements:** Python 3.10+
+### 1. Get the code
 
-```bash
-# 1. Install dependencies
-pip install -r requirements.txt
+Download or clone this repository, then open a terminal inside the `code/analysis/` folder.
 
-# 2. Run notebooks in order
-jupyter notebook code/analysis/01_data_cleaning.ipynb
-jupyter notebook code/analysis/02_descriptive_statistics.ipynb
-jupyter notebook code/analysis/03_correlation_analysis.ipynb
-jupyter notebook code/analysis/04_regression_analysis.ipynb
-jupyter notebook code/analysis/05_group_comparisons.ipynb
+```
+Research-Lab-WISE-2025-26/
+└── code/
+    └── analysis/      ← open your terminal here
 ```
 
-Notebooks must be run in order: `01` generates `cleaned_data.csv` which all subsequent notebooks depend on.
+### 2. Install dependencies
 
-**Output files generated:**
-- `code/analysis/results/figures/` — fig1–fig9.png (all figures, dpi=150)
-- `code/analysis/results/tables/` — 7 CSV files (correlation matrix, ANOVA summary, model comparison, Fisher's Z, discipline regressions, coefficient differences)
+```bash
+pip install -r ../../requirements.txt
+```
+
+> If `pip` doesn't work, try `pip3 install -r ../../requirements.txt`
+
+### 3. Run the notebooks — pick your preferred way
+
+**Option A: VS Code**
+Open the `code/analysis/` folder in VS Code. Open each notebook file (`.ipynb`) and click **Run All** at the top. Run them in order: `01` → `02` → `03` → `04` → `05`.
+
+**Option B: Jupyter in the browser**
+```bash
+jupyter notebook
+```
+This opens a browser. Open each notebook and click **Cell → Run All**. Run them in order: `01` → `02` → `03` → `04` → `05`.
+
+---
+
+**Run them in this order — each one depends on the previous:**
+
+| # | Notebook | Does |
+|---|----------|------|
+| 01 | `01_data_cleaning.ipynb` | Cleans raw data → creates `cleaned_data.csv` |
+| 02 | `02_descriptive_statistics.ipynb` | Summary stats + figures |
+| 03 | `03_correlation_analysis.ipynb` | Correlation matrix (RQ3) |
+| 04 | `04_regression_analysis.ipynb` | Regression models (RQ1) |
+| 05 | `05_group_comparisons.ipynb` | ANOVA + discipline analysis (RQ2 & RQ4) |
+
+> `01` must run first — it generates `cleaned_data.csv` which every other notebook reads.
+
+### 4. Outputs
+
+After running all notebooks:
+- Figures saved to `results/figures/` (fig1–fig9.png)
+- Tables saved to `results/tables/` (7 CSV files)
 
 ---
 
